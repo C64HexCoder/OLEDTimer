@@ -176,7 +176,7 @@ typedef unsigned char bool;
  Function Prototypes
  ***************************************************************************************************/
 void OLED_Init(void);
-void OLED_DisplayChar(uint8_t ch);
+void OLED_DisplayChar(Font font,uint8_t ch);
 void OLED_WriteChar(const Font font, unsigned char Xpos, unsigned char Ypos, unsigned char Char, bool Inverted, bool Cursor, bool BoldCursor);
 void OLED_DisplayString(uint8_t *);
 void OLED_ScrollMessage(uint8_t lineNum, char *strptr);
