@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "OLEDTimer", "OLEDTimer\OLEDTimer.cproj", "{2285C48D-296E-43FD-A7B6-69885F64CFFD}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "Nokia5110GLCD", "..\Nokia5110GLCD\Nokia5110GLCD\Nokia5110GLCD.cppproj", "{DF67E460-5A4A-4F41-A12A-38B0DA350B8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2285C48D-296E-43FD-A7B6-69885F64CFFD}.Debug|AVR.ActiveCfg = Debug|AVR
+		{2285C48D-296E-43FD-A7B6-69885F64CFFD}.Debug|AVR.Build.0 = Debug|AVR
+		{2285C48D-296E-43FD-A7B6-69885F64CFFD}.Release|AVR.ActiveCfg = Release|AVR
+		{2285C48D-296E-43FD-A7B6-69885F64CFFD}.Release|AVR.Build.0 = Release|AVR
+		{DF67E460-5A4A-4F41-A12A-38B0DA350B8E}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DF67E460-5A4A-4F41-A12A-38B0DA350B8E}.Debug|AVR.Build.0 = Debug|AVR
+		{DF67E460-5A4A-4F41-A12A-38B0DA350B8E}.Release|AVR.ActiveCfg = Release|AVR
+		{DF67E460-5A4A-4F41-A12A-38B0DA350B8E}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
