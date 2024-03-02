@@ -29,7 +29,9 @@ void I2C::Start()
 	
 void I2C::SendSLaveAddress(unsigned char adress)
 {
-	TWAR = adress;	
+	TWDR = (adress << 1) } 0x01;	
+	//TWDR |=0x01;	
+	TWCR = (1 << TWINT) | (1 << TWEN);
 }
 	
 void I2C::WaitBussy()
