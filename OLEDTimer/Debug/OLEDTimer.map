@@ -417,32 +417,32 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x1ffe
+.debug_info     0x0000000000000000     0x2077
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000      0x48c C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
  .debug_info    0x000000000000048c      0x3f8 i2c.o
- .debug_info    0x0000000000000884      0x652 main.o
- .debug_info    0x0000000000000ed6     0x1128 SSD1306.o
+ .debug_info    0x0000000000000884      0x6cb main.o
+ .debug_info    0x0000000000000f4f     0x1128 SSD1306.o
 
-.debug_abbrev   0x0000000000000000      0x866
+.debug_abbrev   0x0000000000000000      0x874
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000      0x44e C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
  .debug_abbrev  0x000000000000044e       0xa9 i2c.o
- .debug_abbrev  0x00000000000004f7      0x192 main.o
- .debug_abbrev  0x0000000000000689      0x1dd SSD1306.o
+ .debug_abbrev  0x00000000000004f7      0x1a0 main.o
+ .debug_abbrev  0x0000000000000697      0x1dd SSD1306.o
 
-.debug_line     0x0000000000000000      0xaed
+.debug_line     0x0000000000000000      0xb33
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000      0x10d C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
  .debug_line    0x000000000000010d      0x223 i2c.o
- .debug_line    0x0000000000000330      0x19a main.o
- .debug_line    0x00000000000004ca      0x623 SSD1306.o
+ .debug_line    0x0000000000000330      0x1e0 main.o
+ .debug_line    0x0000000000000510      0x623 SSD1306.o
 
-.debug_frame    0x0000000000000000      0x374
+.debug_frame    0x0000000000000000      0x3a4
  *(.debug_frame)
  .debug_frame   0x0000000000000000       0x84 i2c.o
- .debug_frame   0x0000000000000084       0x54 main.o
- .debug_frame   0x00000000000000d8      0x29c SSD1306.o
+ .debug_frame   0x0000000000000084       0x84 main.o
+ .debug_frame   0x0000000000000108      0x29c SSD1306.o
 
 .debug_str      0x0000000000000000      0x28c
  *(.debug_str)
@@ -451,11 +451,11 @@ END GROUP
  .debug_str     0x0000000000000181       0x6d main.o
  .debug_str     0x00000000000001ee       0x9e SSD1306.o
 
-.debug_loc      0x0000000000000000      0xdb2
+.debug_loc      0x0000000000000000      0xe72
  *(.debug_loc)
  .debug_loc     0x0000000000000000      0x191 i2c.o
- .debug_loc     0x0000000000000191       0xdf main.o
- .debug_loc     0x0000000000000270      0xb42 SSD1306.o
+ .debug_loc     0x0000000000000191      0x19f main.o
+ .debug_loc     0x0000000000000330      0xb42 SSD1306.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -509,155 +509,161 @@ LOAD data_init
                 0x00000000000002be      0x16b main.o
                 0x00000000000002be                SevenSegments11x19
 
-.text.main      0x000000000000042a      0x162
- .text.main     0x000000000000042a      0x162 main.o
-                0x000000000000042a                main
+.progmemx.data.Big_Tooth
+                0x0000000000000429       0xc2
+ .progmemx.data.Big_Tooth
+                0x0000000000000429       0xc2 main.o
+                0x0000000000000429                Big_Tooth
+
+.text.main      0x00000000000004ec      0x192
+ .text.main     0x00000000000004ec      0x192 main.o
+                0x00000000000004ec                main
 
 .text.OLED_WriteChar
-                0x000000000000058c      0x120
+                0x000000000000067e      0x120
  .text.OLED_WriteChar
-                0x000000000000058c      0x120 SSD1306.o
-                0x000000000000058c                OLED_WriteChar
+                0x000000000000067e      0x120 SSD1306.o
+                0x000000000000067e                OLED_WriteChar
 
 .text.OLED_WriteTwoDigitNumber
-                0x00000000000006ac       0xa8
+                0x000000000000079e       0xa8
  .text.OLED_WriteTwoDigitNumber
-                0x00000000000006ac       0xa8 SSD1306.o
-                0x00000000000006ac                OLED_WriteTwoDigitNumber
+                0x000000000000079e       0xa8 SSD1306.o
+                0x000000000000079e                OLED_WriteTwoDigitNumber
 
 .text.OLED_DrawBitmapRLE
-                0x0000000000000754       0x9c
+                0x0000000000000846       0x9c
  .text.OLED_DrawBitmapRLE
-                0x0000000000000754       0x9c SSD1306.o
-                0x0000000000000754                OLED_DrawBitmapRLE
+                0x0000000000000846       0x9c SSD1306.o
+                0x0000000000000846                OLED_DrawBitmapRLE
 
 .text.OLED_Init
-                0x00000000000007f0       0x6a
+                0x00000000000008e2       0x6a
  .text.OLED_Init
-                0x00000000000007f0       0x6a SSD1306.o
-                0x00000000000007f0                OLED_Init
+                0x00000000000008e2       0x6a SSD1306.o
+                0x00000000000008e2                OLED_Init
 
 .text.OLED_Clear
-                0x000000000000085a       0x5e
+                0x000000000000094c       0x5e
  .text.OLED_Clear
-                0x000000000000085a       0x5e SSD1306.o
-                0x000000000000085a                OLED_Clear
+                0x000000000000094c       0x5e SSD1306.o
+                0x000000000000094c                OLED_Clear
 
 .text.i2c_tx_address
-                0x00000000000008b8       0x48
+                0x00000000000009aa       0x48
  .text.i2c_tx_address
-                0x00000000000008b8       0x48 i2c.o
-                0x00000000000008b8                i2c_tx_address
+                0x00000000000009aa       0x48 i2c.o
+                0x00000000000009aa                i2c_tx_address
 
 .text.OLED_SetCursor
-                0x0000000000000900       0x3e
+                0x00000000000009f2       0x3e
  .text.OLED_SetCursor
-                0x0000000000000900       0x3e SSD1306.o
-                0x0000000000000900                OLED_SetCursor
-
-.text.i2c_tx_start
-                0x000000000000093e       0x24
- .text.i2c_tx_start
-                0x000000000000093e       0x24 i2c.o
-                0x000000000000093e                i2c_tx_start
-
-.text.i2c_tx_byte
-                0x0000000000000962       0x1e
- .text.i2c_tx_byte
-                0x0000000000000962       0x1e i2c.o
-                0x0000000000000962                i2c_tx_byte
-
-.text.oledSendCommand
-                0x0000000000000980       0x16
- .text.oledSendCommand
-                0x0000000000000980       0x16 SSD1306.o
-                0x0000000000000980                oledSendCommand
-
-.text.oledSendStart
-                0x0000000000000996       0x10
- .text.oledSendStart
-                0x0000000000000996       0x10 SSD1306.o
-                0x0000000000000996                oledSendStart
-
-.text.i2c_tx_stop
-                0x00000000000009a6        0xe
- .text.i2c_tx_stop
-                0x00000000000009a6        0xe i2c.o
-                0x00000000000009a6                i2c_tx_stop
-
-.text.exit      0x00000000000009b4        0xe
- .text.exit     0x00000000000009b4        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
-                0x00000000000009b4                exit
-
-.text.i2c_init  0x00000000000009c2        0xc
- .text.i2c_init
-                0x00000000000009c2        0xc i2c.o
-                0x00000000000009c2                i2c_init
+                0x00000000000009f2       0x3e SSD1306.o
+                0x00000000000009f2                OLED_SetCursor
 
 .text.TimerFinished
-                0x00000000000009ce        0xc
+                0x0000000000000a30       0x2a
  .text.TimerFinished
-                0x00000000000009ce        0xc main.o
-                0x00000000000009ce                TimerFinished
+                0x0000000000000a30       0x2a main.o
+                0x0000000000000a30                TimerFinished
+
+.text.i2c_tx_start
+                0x0000000000000a5a       0x24
+ .text.i2c_tx_start
+                0x0000000000000a5a       0x24 i2c.o
+                0x0000000000000a5a                i2c_tx_start
+
+.text.i2c_tx_byte
+                0x0000000000000a7e       0x1e
+ .text.i2c_tx_byte
+                0x0000000000000a7e       0x1e i2c.o
+                0x0000000000000a7e                i2c_tx_byte
+
+.text.oledSendCommand
+                0x0000000000000a9c       0x16
+ .text.oledSendCommand
+                0x0000000000000a9c       0x16 SSD1306.o
+                0x0000000000000a9c                oledSendCommand
+
+.text.oledSendStart
+                0x0000000000000ab2       0x10
+ .text.oledSendStart
+                0x0000000000000ab2       0x10 SSD1306.o
+                0x0000000000000ab2                oledSendStart
+
+.text.i2c_tx_stop
+                0x0000000000000ac2        0xe
+ .text.i2c_tx_stop
+                0x0000000000000ac2        0xe i2c.o
+                0x0000000000000ac2                i2c_tx_stop
+
+.text.exit      0x0000000000000ad0        0xe
+ .text.exit     0x0000000000000ad0        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
+                0x0000000000000ad0                exit
+
+.text.i2c_init  0x0000000000000ade        0xc
+ .text.i2c_init
+                0x0000000000000ade        0xc i2c.o
+                0x0000000000000ade                i2c_init
 
 .text.oledSendStop
-                0x00000000000009da        0x4
+                0x0000000000000aea        0x4
  .text.oledSendStop
-                0x00000000000009da        0x4 SSD1306.o
-                0x00000000000009da                oledSendStop
+                0x0000000000000aea        0x4 SSD1306.o
+                0x0000000000000aea                oledSendStop
 
 .text.oledSendByte
-                0x00000000000009de        0x4
+                0x0000000000000aee        0x4
  .text.oledSendByte
-                0x00000000000009de        0x4 SSD1306.o
-                0x00000000000009de                oledSendByte
+                0x0000000000000aee        0x4 SSD1306.o
+                0x0000000000000aee                oledSendByte
 
-.text           0x00000000000009e2        0x2
- .text          0x00000000000009e2        0x2 C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
-                0x00000000000009e2                __vector_1
-                0x00000000000009e2                __vector_12
-                0x00000000000009e2                __bad_interrupt
-                0x00000000000009e2                __vector_6
-                0x00000000000009e2                __vector_3
-                0x00000000000009e2                __vector_11
-                0x00000000000009e2                __vector_13
-                0x00000000000009e2                __vector_17
-                0x00000000000009e2                __vector_7
-                0x00000000000009e2                __vector_5
-                0x00000000000009e2                __vector_4
-                0x00000000000009e2                __vector_9
-                0x00000000000009e2                __vector_2
-                0x00000000000009e2                __vector_15
-                0x00000000000009e2                __vector_8
-                0x00000000000009e2                __vector_14
-                0x00000000000009e2                __vector_10
-                0x00000000000009e2                __vector_16
-                0x00000000000009e2                __vector_18
+.text           0x0000000000000af2        0x2
+ .text          0x0000000000000af2        0x2 C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
+                0x0000000000000af2                __vector_1
+                0x0000000000000af2                __vector_12
+                0x0000000000000af2                __bad_interrupt
+                0x0000000000000af2                __vector_6
+                0x0000000000000af2                __vector_3
+                0x0000000000000af2                __vector_11
+                0x0000000000000af2                __vector_13
+                0x0000000000000af2                __vector_17
+                0x0000000000000af2                __vector_7
+                0x0000000000000af2                __vector_5
+                0x0000000000000af2                __vector_4
+                0x0000000000000af2                __vector_9
+                0x0000000000000af2                __vector_2
+                0x0000000000000af2                __vector_15
+                0x0000000000000af2                __vector_8
+                0x0000000000000af2                __vector_14
+                0x0000000000000af2                __vector_10
+                0x0000000000000af2                __vector_16
+                0x0000000000000af2                __vector_18
 
 .text.__dummy_fini
-                0x00000000000009e4        0x2
+                0x0000000000000af4        0x2
  .text.__dummy_fini
-                0x00000000000009e4        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
-                0x00000000000009e4                _fini
+                0x0000000000000af4        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
+                0x0000000000000af4                _fini
 
 .text.__dummy_funcs_on_exit
-                0x00000000000009e6        0x2
+                0x0000000000000af6        0x2
  .text.__dummy_funcs_on_exit
-                0x00000000000009e6        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
-                0x00000000000009e6                __funcs_on_exit
+                0x0000000000000af6        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
+                0x0000000000000af6                __funcs_on_exit
 
 .text.__dummy_simulator_exit
-                0x00000000000009e8        0x2
+                0x0000000000000af8        0x2
  .text.__dummy_simulator_exit
-                0x00000000000009e8        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
-                0x00000000000009e8                __simulator_exit
+                0x0000000000000af8        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
+                0x0000000000000af8                __simulator_exit
 
-.text._Exit     0x00000000000009ea        0x2
- .text._Exit    0x00000000000009ea        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(_Exit.o)
-                0x00000000000009ea                _Exit
+.text._Exit     0x0000000000000afa        0x2
+ .text._Exit    0x0000000000000afa        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(_Exit.o)
+                0x0000000000000afa                _Exit
 
 .data.SevenSegments_struc
-                0x0000000000800109        0x6 load address 0x00000000000009ec
+                0x0000000000800109        0x6 load address 0x0000000000000afc
  .data.SevenSegments_struc
                 0x0000000000800109        0x6 main.o
                 0x0000000000800109                SevenSegments_struc

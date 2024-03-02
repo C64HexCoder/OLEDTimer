@@ -11,6 +11,7 @@
 #include "ssd1306.h"
 #include "CathClockMainScreenRLE.h"
 #include "SevenSeg19H.h"
+#include "Big_Tooth.h"
 //#include "OLED.h"
 
 unsigned char Minuts,Seconds;
@@ -23,6 +24,7 @@ int main(void)
 	//OLED oled;
 	Minuts = 2;
 	Seconds = 0;
+	char finished = false;
 	
 	OLED_Init();  //initialize the OLED
 	OLED_Clear(); //clear the display (for good measure)
@@ -34,26 +36,32 @@ int main(void)
 			OLED_WriteTwoDigitNumber(SevenSegments_struc,70,4,0,false,false,false,false,false);
 	
 	
-	while (1)
+	while (!finished)
 	{
 		PORTD ^= 0x01;
-		_delay_ms (1000);
+		_delay_ms (100);
 			
 		if (--Seconds == 255)
 		{
 			if (--Minuts == 255)
+			{
 				TimerFinished();
+				finished = true;;
+			}
 			else
 				Seconds = 59;
 		}
 	
 	
-			
-		//OLED_SetCursor(0, 0);        //set the cursor position to (0, 0)
-		//OLED_DrawBitmapRLE (0,0,CathClockMainScreenRLE,566); //Print out some text
-		OLED_WriteTwoDigitNumber(SevenSegments_struc,37,4,Minuts,false,false,false,false,false);
-		OLED_WriteChar(SevenSegments_struc,59,4,':',false,false,false);
-		OLED_WriteTwoDigitNumber(SevenSegments_struc,70,4,Seconds,false,false,false,false,false);
+		
+		if (!finished) 
+		{	
+			//OLED_SetCursor(0, 0);        //set the cursor position to (0, 0)
+			//OLED_DrawBitmapRLE (0,0,CathClockMainScreenRLE,566); //Print out some text
+			OLED_WriteTwoDigitNumber(SevenSegments_struc,37,4,Minuts,false,false,false,false,false);
+			OLED_WriteChar(SevenSegments_struc,59,4,':',false,false,false);
+			OLED_WriteTwoDigitNumber(SevenSegments_struc,70,4,Seconds,false,false,false,false,false);
+		}
 	}
     //TODO:: Please write your application code 
 
@@ -61,6 +69,8 @@ int main(void)
 
 void TimerFinished ()
 {
+	OLED_SetCursor(0,0);
+	OLED_DrawBitmapRLE(0,0,Big_Tooth,194);
 	Minuts = 2;
 	Seconds = 0;		
 }
