@@ -12,7 +12,12 @@
 #include "CathClockMainScreenRLE.h"
 #include "SevenSeg19H.h"
 #include "Big_Tooth.h"
-//#include "OLED.h"
+#include "main.h"
+
+#define FINISH_BUZ_TIME 200
+#define START 0
+#define FINISHED 1
+
 
 unsigned char Minuts,Seconds;
 unsigned char Buffer[55][3];
@@ -20,7 +25,7 @@ unsigned char Buffer[55][3];
 
 int main(void)
 {
-	DDRD = 0x01;
+	DDRD = 0x03;
 	//OLED oled;
 	Minuts = 2;
 	Seconds = 0;
@@ -28,40 +33,50 @@ int main(void)
 	
 	OLED_Init();  //initialize the OLED
 	OLED_Clear(); //clear the display (for good measure)
-		
+	
+		while (1) {
 			OLED_SetCursor(0, 0);        //set the cursor position to (0, 0)
 			OLED_DrawBitmapRLE (0,0,CathClockMainScreenRLE,566); //Print out some text
 			OLED_WriteTwoDigitNumber(SevenSegments_struc,37,4,02,false,false,false,false,false);
 			OLED_WriteChar(SevenSegments_struc,59,4,':',false,false,false);
 			OLED_WriteTwoDigitNumber(SevenSegments_struc,70,4,0,false,false,false,false,false);
 	
+		WaitForStartButton();
+		PlayBuzzer(START);
 	
-	while (!finished)
-	{
-		PORTD ^= 0x01;
-		_delay_ms (100);
-			
-		if (--Seconds == 255)
+		while (!finished)
 		{
-			if (--Minuts == 255)
+			PORTD ^= 0x01;
+			_delay_ms (10);
+			
+			if (--Seconds == 255)
 			{
-				TimerFinished();
-				finished = true;;
+				if (--Minuts == 255)
+				{
+					TimerFinished();
+					PlayBuzzer(FINISHED);
+					finished = true;
+					break;
+				}
+				else
+					Seconds = 59;
 			}
-			else
-				Seconds = 59;
-		}
 	
 	
 		
-		if (!finished) 
-		{	
-			//OLED_SetCursor(0, 0);        //set the cursor position to (0, 0)
-			//OLED_DrawBitmapRLE (0,0,CathClockMainScreenRLE,566); //Print out some text
-			OLED_WriteTwoDigitNumber(SevenSegments_struc,37,4,Minuts,false,false,false,false,false);
-			OLED_WriteChar(SevenSegments_struc,59,4,':',false,false,false);
-			OLED_WriteTwoDigitNumber(SevenSegments_struc,70,4,Seconds,false,false,false,false,false);
+			//if (!finished) 
+			//{	
+				//OLED_SetCursor(0, 0);        //set the cursor position to (0, 0)
+				//OLED_DrawBitmapRLE (0,0,CathClockMainScreenRLE,566); //Print out some text
+				OLED_WriteTwoDigitNumber(SevenSegments_struc,37,4,Minuts,false,false,false,false,false);
+				OLED_WriteChar(SevenSegments_struc,59,4,':',false,false,false);
+				OLED_WriteTwoDigitNumber(SevenSegments_struc,70,4,Seconds,false,false,false,false,false);
+			//}
 		}
+	
+		WaitForStartButton();
+		finished = false;
+	
 	}
     //TODO:: Please write your application code 
 
@@ -73,4 +88,35 @@ void TimerFinished ()
 	OLED_DrawBitmapRLE(0,0,Big_Tooth,194);
 	Minuts = 2;
 	Seconds = 0;		
+}
+
+
+void PlayBuzzer (char event)
+{
+	switch (event)
+	{
+		case 0:
+			PORTD |= 0x02;
+			_delay_ms(100);
+			PORTD &= ~0x02;
+		break;
+		case 1:
+			for (int i=0; i < 5; i++)
+			{
+				PORTD |= 0x02;
+				_delay_ms(FINISH_BUZ_TIME);
+				PORTD &= ~0x02;
+				_delay_ms(FINISH_BUZ_TIME);
+			}		
+		break;
+	}
+
+}
+
+void WaitForStartButton ()
+{
+	do {
+	while (PIND & (1 << PIND4));
+	_delay_ms(50);
+	} while (PIND & (1 << PIND4));
 }

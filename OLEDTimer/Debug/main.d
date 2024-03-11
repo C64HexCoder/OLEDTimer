@@ -18,7 +18,8 @@ main.d main.o: .././main.c \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\fuse.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\lock.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\interrupt.h \
- .././CathClockMainScreenRLE.h .././SevenSeg19H.h .././Big_Tooth.h
+ .././CathClockMainScreenRLE.h .././SevenSeg19H.h .././Big_Tooth.h \
+ .././main.h
 
 c:\program\ files\microchip\xc8\v2.36\avr\avr\include\util\delay.h:
 
@@ -65,3 +66,5 @@ c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\interrupt.h:
 .././SevenSeg19H.h:
 
 .././Big_Tooth.h:
+
+.././main.h:
