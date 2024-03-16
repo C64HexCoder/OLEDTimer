@@ -123,10 +123,13 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Big_Tooth.h">
+    <Compile Include="ADC.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="CathClockMainScreenRLE.h">
+    <Compile Include="ADC.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Big_Tooth.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="i2c.c">
@@ -139,6 +142,9 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="main.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="RazTimer.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="SevenSeg19H.h">

@@ -37,6 +37,7 @@ SUBDIRS :=
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../ADC.c \
 ../i2c.c \
 ../main.c \
 ../SSD1306.c
@@ -49,21 +50,25 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+ADC.o \
 i2c.o \
 main.o \
 SSD1306.o
 
 OBJS_AS_ARGS +=  \
+ADC.o \
 i2c.o \
 main.o \
 SSD1306.o
 
 C_DEPS +=  \
+ADC.d \
 i2c.d \
 main.d \
 SSD1306.d
 
 C_DEPS_AS_ARGS +=  \
+ADC.d \
 i2c.d \
 main.d \
 SSD1306.d
@@ -82,6 +87,13 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+./ADC.o: .././ADC.c
+	@echo Building file: $<
+	@echo Invoking: XC8 C Compiler : 2.36
+	$(QUOTE)C:\Program Files\Microchip\xc8\v2.36\bin\xc8-cc.exe$(QUOTE)  -mcpu=ATmega8A  -c -x c -funsigned-char -funsigned-bitfields -mext=cci -D__ATmega8A__ -DDEBUG  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
 ./i2c.o: .././i2c.c
 	@echo Building file: $<
 	@echo Invoking: XC8 C Compiler : 2.36
