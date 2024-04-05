@@ -9,8 +9,6 @@ main.d main.o: .././main.c \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\util\delay_basic.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\math.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\stdlib.h \
- .././i2c.h .././ssd1306.h \
- c:\program\ files\microchip\xc8\v2.36\avr\avr\include\stdio.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\io.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\sfr_defs.h \
  C:/Program\ Files\ (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/include/avr/iom8a.h \
@@ -18,9 +16,11 @@ main.d main.o: .././main.c \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\common.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\fuse.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\lock.h \
+ .././i2c.h .././ssd1306.h \
+ c:\program\ files\microchip\xc8\v2.36\avr\avr\include\stdio.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\interrupt.h \
- .././RazTimer.h .././SevenSeg19H.h .././Big_Tooth.h .././main.h \
- .././ADC.h
+ .././RazTimer.h .././EmptyBattery.h .././SevenSeg19H.h .././Big_Tooth.h \
+ .././main.h .././ADC.h
 
 c:\program\ files\microchip\xc8\v2.36\avr\avr\include\util\delay.h:
 
@@ -42,12 +42,6 @@ c:\program\ files\microchip\xc8\v2.36\avr\avr\include\math.h:
 
 c:\program\ files\microchip\xc8\v2.36\avr\avr\include\stdlib.h:
 
-.././i2c.h:
-
-.././ssd1306.h:
-
-c:\program\ files\microchip\xc8\v2.36\avr\avr\include\stdio.h:
-
 c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\io.h:
 
 c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\sfr_defs.h:
@@ -62,9 +56,17 @@ c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\fuse.h:
 
 c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\lock.h:
 
+.././i2c.h:
+
+.././ssd1306.h:
+
+c:\program\ files\microchip\xc8\v2.36\avr\avr\include\stdio.h:
+
 c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\interrupt.h:
 
 .././RazTimer.h:
+
+.././EmptyBattery.h:
 
 .././SevenSeg19H.h:
 

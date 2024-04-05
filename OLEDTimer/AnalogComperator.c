@@ -5,7 +5,9 @@
  *  Author: yossi
  */ 
 
+#include "AnalogComperator.h"
+
 void TurnOnAnalogComparator()
 {
-	ACSR = (1<<ACBG) | (1<<
+	ACSR = (1<<ACBG) | (1<<ACIE) | (1<<ACIS0) | (1<<ACIS1);
 }

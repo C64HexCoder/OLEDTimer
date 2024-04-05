@@ -9,6 +9,9 @@
 #ifndef ANALOGCOMPERATOR_H_
 #define ANALOGCOMPERATOR_H_
 
+#include <stdlib.h>
+#include <avr/io.h>
+
 void TurnOnAnalogComparator();
 
 

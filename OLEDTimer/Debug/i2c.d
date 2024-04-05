@@ -7,7 +7,7 @@ i2c.d i2c.o: .././i2c.c \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\stdint.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\bits\alltypes.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\bits\stdint.h \
- C:/Program\ Files/Microchip/xc8/v2.36/dfp/xc8/avr/include/avr/iom8a.h \
+ C:/Program\ Files\ (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/include/avr/iom8a.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\portpins.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\common.h \
  c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\fuse.h \
@@ -30,7 +30,7 @@ c:\program\ files\microchip\xc8\v2.36\avr\avr\include\bits\alltypes.h:
 
 c:\program\ files\microchip\xc8\v2.36\avr\avr\include\bits\stdint.h:
 
-C:/Program\ Files/Microchip/xc8/v2.36/dfp/xc8/avr/include/avr/iom8a.h:
+C:/Program\ Files\ (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/include/avr/iom8a.h:
 
 c:\program\ files\microchip\xc8\v2.36\avr\avr\include\avr\portpins.h:
 

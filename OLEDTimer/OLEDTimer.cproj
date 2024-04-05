@@ -132,7 +132,13 @@
     <Compile Include="AnalogComperator.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="AnalogComperator.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Big_Tooth.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="EmptyBattery.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="i2c.c">

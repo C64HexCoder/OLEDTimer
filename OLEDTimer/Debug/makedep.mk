@@ -4,6 +4,8 @@
 
 ADC.c
 
+AnalogComperator.c
+
 i2c.c
 
 main.c

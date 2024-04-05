@@ -8,14 +8,17 @@
 #define F_CPU 8000000L
 #include <util/delay.h>
 #include <stdlib.h>
+#include <avr/io.h>
 #include "i2c.h"
 #include "ssd1306.h"
 //#include "CathClockMainScreenRLE.h"
 #include "RazTimer.h"
+#include "EmptyBattery.h"
 #include "SevenSeg19H.h"
 #include "Big_Tooth.h"
 #include "main.h"
 #include "ADC.h"
+//#include "AnalogComperator.h"
 
 #define FINISH_BUZ_TIME 200
 #define START 0
@@ -145,4 +148,9 @@ ISR (ADC_vect)
 	//SREG = tempSREG;
 	//ADCSRA |= (1<<ADIF);
 	sei();
+}
+
+ISR (ANA_COMP_vect)
+{
+	OLED_DrawBitmapRLE(0,0,EmptyBattery,728);
 }
