@@ -129,6 +129,9 @@
     <Compile Include="ADC.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="AnalogComperator.c">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Big_Tooth.h">
       <SubType>compile</SubType>
     </Compile>
