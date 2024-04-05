@@ -36,14 +36,14 @@ int main(void)
 	Minuts = 2;
 	Seconds = 0;
 	char finished = false;
-	
+	_delay_ms(60);
 	OLED_Init();  //initialize the OLED
 	OLED_Clear(); //clear the display (for good measure)
-	sei();
-	ADC_init();
+	//sei();
+	//ADC_init();
 	//ADC_StartConversion();
 	
-	_delay_ms(5000);
+	//_delay_ms(5000);
 
 		//stay: goto stay;
 		while (1) {

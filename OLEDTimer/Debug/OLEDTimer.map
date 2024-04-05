@@ -5,7 +5,7 @@ c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr4/memx-cons
 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr4/memx-const\libgcc.a(_umulhisi3.o)
                               SSD1306.o (__umulhisi3)
 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
-                              C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o (exit)
+                              C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/lib/avr4/memx-const/crtatmega8a.o (exit)
 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(_Exit.o)
                               c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o) (_Exit)
 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr4/memx-const\libgcc.a(_exit.o)
@@ -21,13 +21,24 @@ Seconds             0x1               main.o
 
 Discarded input sections
 
- .data          0x0000000000000000        0x0 C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
- .bss           0x0000000000000000        0x0 C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
+ .data          0x0000000000000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
+ .bss           0x0000000000000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
  .text          0x0000000000000000        0x0 ADC.o
  .data          0x0000000000000000        0x0 ADC.o
  .bss           0x0000000000000000        0x0 ADC.o
+ .text.ADC_init
+                0x0000000000000000        0xe ADC.o
  .text.ADC_StartConversion
                 0x0000000000000000        0x8 ADC.o
+ .debug_info    0x0000000000000000      0x285 ADC.o
+ .debug_abbrev  0x0000000000000000       0x46 ADC.o
+ .debug_aranges
+                0x0000000000000000       0x28 ADC.o
+ .debug_ranges  0x0000000000000000       0x18 ADC.o
+ .debug_line    0x0000000000000000       0xae ADC.o
+ .debug_str     0x0000000000000000        0x0 ADC.o
+ .comment       0x0000000000000000       0x30 ADC.o
+ .debug_frame   0x0000000000000000       0x34 ADC.o
  .text          0x0000000000000000        0x0 i2c.o
  .data          0x0000000000000000        0x0 i2c.o
  .bss           0x0000000000000000        0x0 i2c.o
@@ -134,7 +145,7 @@ user_signatures  0x0000000000850000 0x0000000000000400 rw !x
 
 Linker script and memory map
 
-LOAD C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
 LOAD ADC.o
 LOAD i2c.o
 LOAD main.o
@@ -146,7 +157,7 @@ START GROUP
 LOAD c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr4/memx-const\libgcc.a
 LOAD c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libm.a
 LOAD c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a
-LOAD C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const\libatmega8a.a
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/lib/avr4/memx-const\libatmega8a.a
 END GROUP
                 [0x0000000000000000]                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
                 [0x0000000000800060]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
@@ -250,7 +261,7 @@ END GROUP
 
 .text           0x0000000000000000       0x88
  *(.vectors)
- .vectors       0x0000000000000000       0x26 C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
+ .vectors       0x0000000000000000       0x26 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
                 0x0000000000000000                __vector_default
                 0x0000000000000000                __vectors
  *(.vectors)
@@ -280,13 +291,13 @@ END GROUP
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x0000000000000038        0x0 C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
+ .init0         0x0000000000000038        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
                 0x0000000000000038                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x0000000000000038        0xc C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
+ .init2         0x0000000000000038        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
  *(.init2)
  *(.init3)
  *(.init3)
@@ -304,7 +315,7 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x0000000000000080        0x4 C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
+ .init9         0x0000000000000080        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
  *(.init9)
                 0x0000000000000084                . = ALIGN (0x2)
  *(.fini9)
@@ -398,9 +409,8 @@ END GROUP
 
 .comment        0x0000000000000000       0x2f
  *(.comment)
- .comment       0x0000000000000000       0x2f ADC.o
+ .comment       0x0000000000000000       0x2f i2c.o
                                          0x30 (size before relaxing)
- .comment       0x000000000000002f       0x30 i2c.o
  .comment       0x000000000000002f       0x30 main.o
  .comment       0x000000000000002f       0x30 SSD1306.o
  .comment       0x000000000000002f       0x30 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
@@ -435,64 +445,57 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x0000000000000000      0x178
+.debug_aranges  0x0000000000000000      0x150
  *(.debug_aranges)
  .debug_aranges
-                0x0000000000000000       0x28 ADC.o
+                0x0000000000000000       0x50 i2c.o
  .debug_aranges
-                0x0000000000000028       0x50 i2c.o
+                0x0000000000000050       0x40 main.o
  .debug_aranges
-                0x0000000000000078       0x40 main.o
- .debug_aranges
-                0x00000000000000b8       0xc0 SSD1306.o
+                0x0000000000000090       0xc0 SSD1306.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x26bd
+.debug_info     0x0000000000000000     0x243e
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x0000000000000000      0x48c C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
- .debug_info    0x000000000000048c      0x285 ADC.o
- .debug_info    0x0000000000000711      0x3f8 i2c.o
- .debug_info    0x0000000000000b09      0x8b2 main.o
- .debug_info    0x00000000000013bb     0x1302 SSD1306.o
+ .debug_info    0x0000000000000000      0x48c C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
+ .debug_info    0x000000000000048c      0x3f8 i2c.o
+ .debug_info    0x0000000000000884      0x8b8 main.o
+ .debug_info    0x000000000000113c     0x1302 SSD1306.o
 
-.debug_abbrev   0x0000000000000000      0x93e
+.debug_abbrev   0x0000000000000000      0x8dd
  *(.debug_abbrev)
- .debug_abbrev  0x0000000000000000      0x44e C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
- .debug_abbrev  0x000000000000044e       0x46 ADC.o
- .debug_abbrev  0x0000000000000494       0xa9 i2c.o
- .debug_abbrev  0x000000000000053d      0x1fa main.o
- .debug_abbrev  0x0000000000000737      0x207 SSD1306.o
+ .debug_abbrev  0x0000000000000000      0x44e C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
+ .debug_abbrev  0x000000000000044e       0xa9 i2c.o
+ .debug_abbrev  0x00000000000004f7      0x1df main.o
+ .debug_abbrev  0x00000000000006d6      0x207 SSD1306.o
 
-.debug_line     0x0000000000000000      0xda7
+.debug_line     0x0000000000000000      0xce4
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x0000000000000000      0x10d C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
- .debug_line    0x000000000000010d       0xae ADC.o
- .debug_line    0x00000000000001bb      0x223 i2c.o
- .debug_line    0x00000000000003de      0x2d6 main.o
- .debug_line    0x00000000000006b4      0x6f3 SSD1306.o
+ .debug_line    0x0000000000000000      0x10d C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
+ .debug_line    0x000000000000010d      0x223 i2c.o
+ .debug_line    0x0000000000000330      0x2c1 main.o
+ .debug_line    0x00000000000005f1      0x6f3 SSD1306.o
 
-.debug_frame    0x0000000000000000      0x4c4
+.debug_frame    0x0000000000000000      0x490
  *(.debug_frame)
- .debug_frame   0x0000000000000000       0x34 ADC.o
- .debug_frame   0x0000000000000034       0x84 i2c.o
- .debug_frame   0x00000000000000b8       0xe8 main.o
- .debug_frame   0x00000000000001a0      0x324 SSD1306.o
+ .debug_frame   0x0000000000000000       0x84 i2c.o
+ .debug_frame   0x0000000000000084       0xe8 main.o
+ .debug_frame   0x000000000000016c      0x324 SSD1306.o
 
-.debug_str      0x0000000000000000      0x298
+.debug_str      0x0000000000000000      0x28f
  *(.debug_str)
- .debug_str     0x0000000000000000      0x17a C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
- .debug_str     0x000000000000017a        0x0 ADC.o
+ .debug_str     0x0000000000000000      0x17a C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
  .debug_str     0x000000000000017a        0x7 i2c.o
- .debug_str     0x0000000000000181       0x79 main.o
- .debug_str     0x00000000000001fa       0x9e SSD1306.o
+ .debug_str     0x0000000000000181       0x70 main.o
+ .debug_str     0x00000000000001f1       0x9e SSD1306.o
 
-.debug_loc      0x0000000000000000     0x12ae
+.debug_loc      0x0000000000000000     0x12f6
  *(.debug_loc)
  .debug_loc     0x0000000000000000      0x191 i2c.o
- .debug_loc     0x0000000000000191      0x3ae main.o
- .debug_loc     0x000000000000053f      0xd6f SSD1306.o
+ .debug_loc     0x0000000000000191      0x3f6 main.o
+ .debug_loc     0x0000000000000587      0xd6f SSD1306.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -512,12 +515,11 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x0000000000000000      0x168
+.debug_ranges   0x0000000000000000      0x150
  *(.debug_ranges)
- .debug_ranges  0x0000000000000000       0x18 ADC.o
- .debug_ranges  0x0000000000000018       0x40 i2c.o
- .debug_ranges  0x0000000000000058       0x48 main.o
- .debug_ranges  0x00000000000000a0       0xc8 SSD1306.o
+ .debug_ranges  0x0000000000000000       0x40 i2c.o
+ .debug_ranges  0x0000000000000040       0x48 main.o
+ .debug_ranges  0x0000000000000088       0xc8 SSD1306.o
 
 .debug_macro
  *(.debug_macro)
@@ -528,7 +530,7 @@ LOAD data_init
 .note.gnu.avr.deviceinfo
                 0x0000000000000000       0x3c
  .note.gnu.avr.deviceinfo
-                0x0000000000000000       0x3c C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
+                0x0000000000000000       0x3c C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
 
 .bss.masterMode
                 0x000000000080006a        0x1
@@ -558,189 +560,184 @@ LOAD data_init
                 0x00000000000003cd       0xc2 main.o
                 0x00000000000003cd                Big_Tooth
 
-.text.main      0x0000000000000490      0x186
- .text.main     0x0000000000000490      0x186 main.o
+.text.main      0x0000000000000490      0x182
+ .text.main     0x0000000000000490      0x182 main.o
                 0x0000000000000490                main
 
 .text.OLED_WriteChar
-                0x0000000000000616      0x120
+                0x0000000000000612      0x120
  .text.OLED_WriteChar
-                0x0000000000000616      0x120 SSD1306.o
-                0x0000000000000616                OLED_WriteChar
+                0x0000000000000612      0x120 SSD1306.o
+                0x0000000000000612                OLED_WriteChar
 
 .text.OLED_WriteNumber
-                0x0000000000000736       0xec
+                0x0000000000000732       0xec
  .text.OLED_WriteNumber
-                0x0000000000000736       0xec SSD1306.o
-                0x0000000000000736                OLED_WriteNumber
+                0x0000000000000732       0xec SSD1306.o
+                0x0000000000000732                OLED_WriteNumber
 
 .text.OLED_WriteTwoDigitNumber
-                0x0000000000000822       0xa8
+                0x000000000000081e       0xa8
  .text.OLED_WriteTwoDigitNumber
-                0x0000000000000822       0xa8 SSD1306.o
-                0x0000000000000822                OLED_WriteTwoDigitNumber
+                0x000000000000081e       0xa8 SSD1306.o
+                0x000000000000081e                OLED_WriteTwoDigitNumber
 
 .text.OLED_DrawBitmapRLE
-                0x00000000000008ca       0x9c
+                0x00000000000008c6       0x9c
  .text.OLED_DrawBitmapRLE
-                0x00000000000008ca       0x9c SSD1306.o
-                0x00000000000008ca                OLED_DrawBitmapRLE
+                0x00000000000008c6       0x9c SSD1306.o
+                0x00000000000008c6                OLED_DrawBitmapRLE
 
 .text.__vector_14
-                0x0000000000000966       0x76
+                0x0000000000000962       0x76
  .text.__vector_14
-                0x0000000000000966       0x76 main.o
-                0x0000000000000966                __vector_14
+                0x0000000000000962       0x76 main.o
+                0x0000000000000962                __vector_14
 
 .text.PlayBuzzer
-                0x00000000000009dc       0x6c
+                0x00000000000009d8       0x6c
  .text.PlayBuzzer
-                0x00000000000009dc       0x6c main.o
-                0x00000000000009dc                PlayBuzzer
+                0x00000000000009d8       0x6c main.o
+                0x00000000000009d8                PlayBuzzer
 
 .text.OLED_Init
-                0x0000000000000a48       0x6a
+                0x0000000000000a44       0x6a
  .text.OLED_Init
-                0x0000000000000a48       0x6a SSD1306.o
-                0x0000000000000a48                OLED_Init
+                0x0000000000000a44       0x6a SSD1306.o
+                0x0000000000000a44                OLED_Init
 
 .text.OLED_Clear
-                0x0000000000000ab2       0x5e
+                0x0000000000000aae       0x5e
  .text.OLED_Clear
-                0x0000000000000ab2       0x5e SSD1306.o
-                0x0000000000000ab2                OLED_Clear
+                0x0000000000000aae       0x5e SSD1306.o
+                0x0000000000000aae                OLED_Clear
 
 .text.i2c_tx_address
-                0x0000000000000b10       0x48
+                0x0000000000000b0c       0x48
  .text.i2c_tx_address
-                0x0000000000000b10       0x48 i2c.o
-                0x0000000000000b10                i2c_tx_address
+                0x0000000000000b0c       0x48 i2c.o
+                0x0000000000000b0c                i2c_tx_address
 
 .text.OLED_SetCursor
-                0x0000000000000b58       0x3e
+                0x0000000000000b54       0x3e
  .text.OLED_SetCursor
-                0x0000000000000b58       0x3e SSD1306.o
-                0x0000000000000b58                OLED_SetCursor
+                0x0000000000000b54       0x3e SSD1306.o
+                0x0000000000000b54                OLED_SetCursor
 
 .text.TimerFinished
-                0x0000000000000b96       0x2a
+                0x0000000000000b92       0x2a
  .text.TimerFinished
-                0x0000000000000b96       0x2a main.o
-                0x0000000000000b96                TimerFinished
+                0x0000000000000b92       0x2a main.o
+                0x0000000000000b92                TimerFinished
 
 .text.i2c_tx_start
-                0x0000000000000bc0       0x24
+                0x0000000000000bbc       0x24
  .text.i2c_tx_start
-                0x0000000000000bc0       0x24 i2c.o
-                0x0000000000000bc0                i2c_tx_start
+                0x0000000000000bbc       0x24 i2c.o
+                0x0000000000000bbc                i2c_tx_start
 
 .text.i2c_tx_byte
-                0x0000000000000be4       0x1e
+                0x0000000000000be0       0x1e
  .text.i2c_tx_byte
-                0x0000000000000be4       0x1e i2c.o
-                0x0000000000000be4                i2c_tx_byte
+                0x0000000000000be0       0x1e i2c.o
+                0x0000000000000be0                i2c_tx_byte
 
 .text.WaitForStartButton
-                0x0000000000000c02       0x1c
+                0x0000000000000bfe       0x1c
  .text.WaitForStartButton
-                0x0000000000000c02       0x1c main.o
-                0x0000000000000c02                WaitForStartButton
+                0x0000000000000bfe       0x1c main.o
+                0x0000000000000bfe                WaitForStartButton
 
 .text.libgcc.mul
-                0x0000000000000c1e       0x18
+                0x0000000000000c1a       0x18
  .text.libgcc.mul
-                0x0000000000000c1e       0x18 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr4/memx-const\libgcc.a(_umulhisi3.o)
-                0x0000000000000c1e                __umulhisi3
+                0x0000000000000c1a       0x18 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avr4/memx-const\libgcc.a(_umulhisi3.o)
+                0x0000000000000c1a                __umulhisi3
 
 .text.oledSendCommand
-                0x0000000000000c36       0x16
+                0x0000000000000c32       0x16
  .text.oledSendCommand
-                0x0000000000000c36       0x16 SSD1306.o
-                0x0000000000000c36                oledSendCommand
+                0x0000000000000c32       0x16 SSD1306.o
+                0x0000000000000c32                oledSendCommand
 
 .text.oledSendStart
-                0x0000000000000c4c       0x10
+                0x0000000000000c48       0x10
  .text.oledSendStart
-                0x0000000000000c4c       0x10 SSD1306.o
-                0x0000000000000c4c                oledSendStart
-
-.text.ADC_init  0x0000000000000c5c        0xe
- .text.ADC_init
-                0x0000000000000c5c        0xe ADC.o
-                0x0000000000000c5c                ADC_init
+                0x0000000000000c48       0x10 SSD1306.o
+                0x0000000000000c48                oledSendStart
 
 .text.i2c_tx_stop
-                0x0000000000000c6a        0xe
+                0x0000000000000c58        0xe
  .text.i2c_tx_stop
-                0x0000000000000c6a        0xe i2c.o
-                0x0000000000000c6a                i2c_tx_stop
+                0x0000000000000c58        0xe i2c.o
+                0x0000000000000c58                i2c_tx_stop
 
-.text.exit      0x0000000000000c78        0xe
- .text.exit     0x0000000000000c78        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
-                0x0000000000000c78                exit
+.text.exit      0x0000000000000c66        0xe
+ .text.exit     0x0000000000000c66        0xe c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
+                0x0000000000000c66                exit
 
-.text.i2c_init  0x0000000000000c86        0xc
+.text.i2c_init  0x0000000000000c74        0xc
  .text.i2c_init
-                0x0000000000000c86        0xc i2c.o
-                0x0000000000000c86                i2c_init
+                0x0000000000000c74        0xc i2c.o
+                0x0000000000000c74                i2c_init
 
 .text.oledSendStop
-                0x0000000000000c92        0x4
+                0x0000000000000c80        0x4
  .text.oledSendStop
-                0x0000000000000c92        0x4 SSD1306.o
-                0x0000000000000c92                oledSendStop
+                0x0000000000000c80        0x4 SSD1306.o
+                0x0000000000000c80                oledSendStop
 
 .text.oledSendByte
-                0x0000000000000c96        0x4
+                0x0000000000000c84        0x4
  .text.oledSendByte
-                0x0000000000000c96        0x4 SSD1306.o
-                0x0000000000000c96                oledSendByte
+                0x0000000000000c84        0x4 SSD1306.o
+                0x0000000000000c84                oledSendByte
 
-.text           0x0000000000000c9a        0x2
- .text          0x0000000000000c9a        0x2 C:/Program Files/Microchip/xc8/v2.36/dfp/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
-                0x0000000000000c9a                __vector_1
-                0x0000000000000c9a                __vector_12
-                0x0000000000000c9a                __bad_interrupt
-                0x0000000000000c9a                __vector_6
-                0x0000000000000c9a                __vector_3
-                0x0000000000000c9a                __vector_11
-                0x0000000000000c9a                __vector_13
-                0x0000000000000c9a                __vector_17
-                0x0000000000000c9a                __vector_7
-                0x0000000000000c9a                __vector_5
-                0x0000000000000c9a                __vector_4
-                0x0000000000000c9a                __vector_9
-                0x0000000000000c9a                __vector_2
-                0x0000000000000c9a                __vector_15
-                0x0000000000000c9a                __vector_8
-                0x0000000000000c9a                __vector_10
-                0x0000000000000c9a                __vector_16
-                0x0000000000000c9a                __vector_18
+.text           0x0000000000000c88        0x2
+ .text          0x0000000000000c88        0x2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/2.1.506/xc8/avr/lib/avr4/memx-const/crtatmega8a.o
+                0x0000000000000c88                __vector_1
+                0x0000000000000c88                __vector_12
+                0x0000000000000c88                __bad_interrupt
+                0x0000000000000c88                __vector_6
+                0x0000000000000c88                __vector_3
+                0x0000000000000c88                __vector_11
+                0x0000000000000c88                __vector_13
+                0x0000000000000c88                __vector_17
+                0x0000000000000c88                __vector_7
+                0x0000000000000c88                __vector_5
+                0x0000000000000c88                __vector_4
+                0x0000000000000c88                __vector_9
+                0x0000000000000c88                __vector_2
+                0x0000000000000c88                __vector_15
+                0x0000000000000c88                __vector_8
+                0x0000000000000c88                __vector_10
+                0x0000000000000c88                __vector_16
+                0x0000000000000c88                __vector_18
 
 .text.__dummy_fini
-                0x0000000000000c9c        0x2
+                0x0000000000000c8a        0x2
  .text.__dummy_fini
-                0x0000000000000c9c        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
-                0x0000000000000c9c                _fini
+                0x0000000000000c8a        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
+                0x0000000000000c8a                _fini
 
 .text.__dummy_funcs_on_exit
-                0x0000000000000c9e        0x2
+                0x0000000000000c8c        0x2
  .text.__dummy_funcs_on_exit
-                0x0000000000000c9e        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
-                0x0000000000000c9e                __funcs_on_exit
+                0x0000000000000c8c        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
+                0x0000000000000c8c                __funcs_on_exit
 
 .text.__dummy_simulator_exit
-                0x0000000000000ca0        0x2
+                0x0000000000000c8e        0x2
  .text.__dummy_simulator_exit
-                0x0000000000000ca0        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
-                0x0000000000000ca0                __simulator_exit
+                0x0000000000000c8e        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(exit.o)
+                0x0000000000000c8e                __simulator_exit
 
-.text._Exit     0x0000000000000ca2        0x2
- .text._Exit    0x0000000000000ca2        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(_Exit.o)
-                0x0000000000000ca2                _Exit
+.text._Exit     0x0000000000000c90        0x2
+ .text._Exit    0x0000000000000c90        0x2 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4/memx-const\libc.a(_Exit.o)
+                0x0000000000000c90                _Exit
 
 .data.SevenSegments_struc
-                0x0000000000800064        0x6 load address 0x0000000000000ca4
+                0x0000000000800064        0x6 load address 0x0000000000000c92
  .data.SevenSegments_struc
                 0x0000000000800064        0x6 main.o
                 0x0000000000800064                SevenSegments_struc
